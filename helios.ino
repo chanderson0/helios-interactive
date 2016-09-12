@@ -1,5 +1,3 @@
-// Helios helios helios
-
 // State machines
 enum InteractionState {
   InteractionNone,
@@ -44,7 +42,7 @@ void setup() {
 
 void loop() {
   const int reading = analogRead(A0);
-  Serial.println(reading);
+  // Serial.println(reading);
   
   const bool switchTouched = reading < kTouchThreshold;
   const unsigned long now = millis();
